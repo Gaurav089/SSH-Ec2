@@ -1,7 +1,7 @@
 name: File Copy 
 on: 
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   deploy:
@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        run: actions/checkout@v2
+        run: actions/checkout@v4
       
       - name: Deploy to Staging server
         uses: easingthemes/ssh-deploy@main
